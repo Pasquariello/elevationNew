@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Elevation Companies | Team</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300i,400,700i" rel="stylesheet">
+    <!--    <link href="/css/stylesheet.css" rel="stylesheet">-->
+    <link href="css/stylesheets.min.css" rel="stylesheet">
+    
+    <style>
+        .grid_row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;  
+            justify-content: center;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            flex: 33.33%;
+            max-width: 30%;
+            padding: 0 4px;
+           
+        }
+
+        .column img {
+/*            margin-top: 8px;*/
+            vertical-align: middle;
+            width: 100%;
+        }
+        
+         .teamFunBox {
+            margin-top: 0px;
+            margin-bottom: 10px;
+            vertical-align: middle;
+            width: 100%;
+            
+        }
+        
+        .coverFunPics {
+            position: absolute;
+            background-color: rgba(0, 0, 0, .8);
+            left: 0;
+         
+            font-weight: 700;
+            z-index: 10;
+            display: none;
+/*
+            margin-top: 8px;
+            margin-bottom: 8px;
+*/
+            height: 100%;
+            width: 100%;
+        }
+        
+        
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body class="no-fouc">
+    <div id="nav"> </div>
+    <!--       <div class="row">-->
+    <div class="team img nav-margin">
+        <div class="headerCover">
+            <div class="inner">
+                <h1 class="heading thin-white header-title">Meet the Team!</h1>
+                <p class="lead thin-white">We are an active, friendly bunch! Take a moment and get to know us.</p>
+            </div>
+        </div>
+    </div>
+    <div class="inner">
+        <h1 class="heading bold-grey">Leadership</h1>
+        <div class="image-container row">
+            <div class="leader-left">
+                <a href="tomBio.html"><img src="images/tomFoster.jpg" class="leader-image" /></a>
+                <a href="tomBio.html">
+                    <p>Co-Founder</p>
+                    <p>Tom W. Foster</p>
+                </a>
+            </div>
+            <div class="leader-right">
+                <a href="marcBio.html"><img src="images/marcHolmes.jpg" class="leader-image" /></a>
+                <a href="marcBio.html">
+                    <p>Co-Founder</p>
+                    <p>Marc F. Holmes</p>
+                </a>
+            </div>
+        </div>
+        <p class="lead">"Earn your leadership every day." – Michael Jordan</p>
+    </div>
+    <div class="container-fluid" style="">
+        <div class="">
+            <div class="row row-centered">
+                <div class="col-sm-2 col-centered boxBlank"></div>
+                <div class="box col-sm-4 col-centered">
+                    <div class="coverTeam" data-toggle="modal" data-target="#ritaModal">
+                        <h3 class="teamLinkText thin-white">Learn More About Rita</h3> </div>
+                    <div class="info">
+                        <p>Rita Burke</p>
+                        <p>Project Coordinator</p>
+                        <p>rita.burke@elevationcompanies.com</p>
+                        <p>(303) 507-6880</p>
+                    </div>
+                    <div class="images"> <img class="empPhoto" src="images/ritaBurke.jpg" /> </div>
+                </div>
+                <div class="box col-sm-4 col-centered">
+                    <div class="coverTeam" data-toggle="modal" data-target="#angelaModal">
+                        <h3 class="teamLinkText thin-white">Learn More About Angela</h3> </div>
+                    <div class="info">
+                        <p>Angela Dailey</p>
+                        <p>Property Manager</p>
+                        <p>angela.dailey@elevationcompanies.com</p>
+                        <p>(720) 530-3122</p>
+                    </div>
+                    <div class="images"> <img class="empPhoto" src="images/angelaImage.jpg" /> </div>
+                </div>
+            </div>
+            <div class="row row-centered">
+                <div class="box col-sm-4 col-centered">
+                    <div class="coverTeam" data-toggle="modal" data-target="#jimModal">
+                        <h3 class="teamLinkText thin-white">Learn More About Jim</h3> </div>
+                    <div class="info">
+                        <p>Jim DuBois</p>
+                        <p>Maintenance Engineer</p>
+                        <p>jim.dubois@elevationcompanies.com</p>
+                        <p>(970) 685-1541</p>
+                    </div>
+                    <div class="images"> <img class="empPhoto" src="images/duBois.jpg" /> </div>
+                </div>
+                <div class="box col-sm-4 col-centered">
+                    <div class="coverTeam" data-toggle="modal" data-target="#tomModal">
+                        <h3 class="teamLinkText thin-white">Learn More About Tom</h3> </div>
+                    <div class="info" style="">
+                        <p>Tom Foster</p>
+                        <p>Principal</p>
+                        <p>tom.foster@elevationcompanies.com</p>
+                        <p>(303) 728-4900</p>
+                    </div>
+                    <div class="images"> <img class="empPhoto" src="images/foster.jpg" /> </div>
+                </div>
+                <div class="col-sm-2 col-centered boxBlank"></div>
+            </div>
+            <div class="row row-centered">
+                <div class="box col-sm-2 col-centered boxBlank"> </div>
+                <div class="box col-sm-4 col-centered">
+                    <div class="coverTeam" data-toggle="modal" data-target="#cathyModal">
+                        <h3 class="teamLinkText thin-white">Learn More About Cathy</h3> </div>
+                    <div class="info" style="">
+                        <p>Cathy Hoblyn</p>
+                        <p>Property Manager</p>
+                        <p>cathy.hoblyn@elevationcompanies.com</p>
+                        <p>(970) 702-4798</p>
+                    </div>
+                    <div class="images"> <img class="empPhoto" src="images/cathyHoblyn.jpg" /> </div>
+                </div>
+                <div class="box col-sm-4 col-centered">
+                    <div class="coverTeam" data-toggle="modal" data-target="#marcModal">
+                        <h3 class="teamLinkText thin-white">Learn More About Marc</h3> </div>
+                    <div class="info" style="">
+                        <p>Marc Holmes</p>
+                        <p>Principal</p>
+                        <p>marc.holmes@elevationcompanies.com</p>
+                        <p>(720) 939-6741</p>
+                    </div>
+                    <div class="images"> <img class="empPhoto" src="images/holmes.jpg" /> </div>
+                </div>
+            </div>
+            <div class="row row-centered">
+                <div class="box col-sm-4 col-centered">
+                    <div class="coverTeam" id="horn" data-toggle="modal" data-target="#chrisHornModal">
+                        <h3 class="teamLinkText thin-white">Learn More About Chris</h3> </div>
+                    <div class="info" style="">
+                        <p>Chris Horn</p>
+                        <p>Assistant Superintendent</p>
+                        <p>chris.horn@elevationcompanies.com</p>
+                        <p>(325) 450-0838</p>
+                    </div>
+                    <div class="images"> <img class="empPhoto" src="images/chrisHorn.jpg" /> </div>
+                </div>
+                <div class="box col-sm-4 col-centered" style="">
+                     <div class="coverTeam" id="kennard" data-toggle="modal" data-target="#chrisModal">
+                        <h3 class="teamLinkText thin-white">Learn More About Chris</h3> </div>
+                    <div class="info" style="">
+                        <p>Chris Kennard</p>
+                        <p>Site Acquisition Manager</p>
+                        <p>chris.kennard@elevationcompanies.com</p>
+                        <p>(303) 913-7527</p>
+                    </div>
+                    <div class="images"> <img class="empPhoto" src="images/chrisKen.JPG" /> </div>
+                </div>
+
+                <div class="box col-sm-2 col-centered boxBlank"> </div>
+            </div>
+
+            <div class="row row-centered">
+                <div class="box col-sm-2 col-centered boxBlank"> </div>
+                    <div class="box col-sm-4 col-centered" style="">
+                    <div class="coverTeam" data-toggle="modal" data-target="#emilyModal">
+                        <h3 class="teamLinkText thin-white">Learn More About Emily</h3> </div>
+                    <div class="info">
+                        <p>Emily La Rosa</p>
+                        <p>Assistant Property Manager</p>
+                        <p>emily.larosa@elevationcompanies.com</p>
+                        <p>(720) 237-4131</p>
+                        <p></p>
+                    </div>
+                    <div class="images"> <img class="empPhoto" src="images/emilyLaRosa.jpg" /> </div>
+                    </div>
+                  <div class="box col-sm-4 col-centered" style="">
+                      <div class="coverTeam" data-toggle="modal" data-target="#marineModal">
+                            <h3 class="teamLinkText thin-white">Learn More About Mariné</h3> </div>
+                        <div class="info">
+                            <p>Mariné McKee</p>
+                            <p>Senior Property Manager</p>
+                            <p>marine.mckee@elevationcompanies.com</p>
+                            <p>(720) 448-6557</p>
+                        </div>
+                        <div class="images"> <img class="empPhoto" src="images/mcKee.jpg" /> </div>
+                </div>
+            </div>
+            
+            <!--            -->
+             <div class="row row-centered">
+                <div class="box col-sm-4 col-centered">
+                     <div class="coverTeam" data-toggle="modal" data-target="#robModal">
+                        <h3 class="teamLinkText thin-white">Learn More About Rob</h3> </div>
+                    <div class="info">
+                        <p>Rob Render</p>
+                        <p>Construction Manager</p>
+                        <p>rob.render@elevationcompanies.com</p>
+                        <p>(720) 253-3093</p>
+                    </div>
+                    <div class="images"> <img class="empPhoto" src="images/rob.jpg" /> </div>
+                </div>
+                <div class="box col-sm-4 col-centered" style="">
+                    <div class="coverTeam" data-toggle="modal" data-target="#samanthaModal">
+                        <h3 class="teamLinkText thin-white">Learn More About Samantha</h3> </div>
+                    <div class="info">
+                        <p>Samantha Rhodes</p>
+                        <p>Assistant Property Manager</p>
+                        <p>samantha.rhodes@elevationcompanies.com</p>
+                        <p>(720) 520-4119</p>
+                    </div>
+                    <div class="images" style="top: 40%"> <img class="empPhoto" src="images/samantha.jpg" /> </div>
+                </div>
+
+                <div class="box col-sm-2 col-centered boxBlank"> </div>
+            </div>
+<!---->
+
+            
+<!--
+             <div class="row row-centered">
+                <div class="box col-sm-3 col-centered boxBlank"> </div>
+
+                <div class="box col-sm-5 col-centered" style="">
+                    <div class="coverTeam" data-toggle="modal" data-target="#samanthaModal">
+                        <h3 class="teamLinkText thin-white">Learn More About Samantha</h3> </div>
+                    <div class="info">
+                        <p>Samantha Rhodes</p>
+                        <p>Assistant Property Manager</p>
+                        <p>samantha.rhodes@elevationcompanies.com</p>
+                        <p>(720) 520-4119</p>
+                    </div>
+                    <div class="images"> <img class="empPhoto" src="images/samantha.jpg" /> </div>
+                </div>
+                <div class="box col-sm-2 col-centered boxBlank"> </div>
+            </div>
+-->
+        </div>
+    </div>
+
+<!--START FUN IMAGES -->
+
+
+    <div style="margin-top: 200px; text-align: center"> 
+        <h2>A Team That Knows How To Have Some Fun</h2>
+        <br>
+        <br>
+        <br>
+        <div class="grid_row">
+            <div class="column">
+            
+                <div class="teamFunBox col-md-12" style="padding: 0">
+                    <div class="coverFunPics">
+                        <h3 class="teamLinkText thin-white" style="padding: 20px">Tom, Marc and dinner in Kodiak, AK.</h3> 
+                    </div>
+                    <div>
+                        <img height="100%" src="images/team_fun_photos/Tom_Marc_and_Dinner_in_Kodiak_AK.JPG">
+                    </div>
+                </div>
+            
+                <div class="teamFunBox col-md-12" style="padding: 0">
+                    <div class="coverFunPics">
+                        <h3 class="teamLinkText thin-white" style="padding: 20px">Emily, Chris and Rob on their way to summit Quandary Peak.</h3> 
+                    </div>
+                    <img src="images/team_fun_photos/Emily_Chris_and_Rob_on_their_Way_to_Summit_Quandary_Peak.jpeg">                
+                </div>
+                
+                 <div class="teamFunBox col-md-12" style="padding: 0">
+                    <div class="coverFunPics">
+                        <h3 class="teamLinkText thin-white" style="padding: 20px">Tom and Marc Tarpon Fishing in Florida.</h3>
+                    </div>
+                    <img src="images/team_fun_photos/Tom_and_Marc_Tarpon_Fishing_in_Florida.jpg">
+                </div>
+              
+                
+                <div class="teamFunBox col-md-12" style="padding: 0">
+                    <div class="coverFunPics">
+                        <h3 class="teamLinkText thin-white" style="padding: 20px">2019 Annual IREM Golf Tournament.</h3>
+                    </div>
+                    <img src="images/team_fun_photos/2019_Annual_IREM_Golf_Tournament.jpg">
+                </div>
+                
+            
+               
+            </div>
+            <div class="column">
+               
+                    <div class="teamFunBox col-md-12" style="padding: 0;">
+                        <div class="coverFunPics">
+                            <h3 class="teamLinkText thin-white" style="padding: 20px">Rob, Marc, Mariné and Megan attempting to play golf.</h3> 
+                        </div>
+                        <img src="images/team_fun_photos/Rob_Marc_Marine_and_Megan_Attempting_to_Play_Golf.JPG">                
+                    </div>
+               
+                
+                <div class="teamFunBox col-md-12" style="padding: 0">
+                    <div class="coverFunPics">
+                        <h3 class="teamLinkText thin-white" style="padding: 20px">Ski day!!! Marc and His three boys, with Chris and Megan.</h3>
+                    </div>
+                    <img src="images/team_fun_photos/Ski_Day.jpg">               
+                </div>
+              
+                 <div class="teamFunBox col-md-12" style="padding: 0">
+                    <div class="coverFunPics">
+                        <h3 class="teamLinkText thin-white" style="padding: 20px">Team event downtown.</h3> 
+                    </div>
+                    <img src="images/team_fun_photos/Team_Event_Downtown.jpg">
+                </div>
+                
+                <div class="teamFunBox col-md-12" style="padding: 0">
+                    <div class="coverFunPics">
+                        <h3 class="teamLinkText thin-white" style="padding: 20px">Top Golf team event.</h3>
+                    </div>
+                    <img src="images/team_fun_photos/Top_Golf_Team_Event.jpg">
+                </div>
+                
+            </div>
+            
+            
+            <div class="column">
+                <div class="teamFunBox col-md-12" style="padding: 0">
+                    <div class="coverFunPics">
+                        <h3 class="teamLinkText thin-white" style="padding: 20px">Tom, Marc and their friends in Kodiak, AK.</h3> 
+                    </div>
+                    <img src="images/team_fun_photos/Tom_Marc_and_Their_Friends_in_Kodiak_AK.JPG">               
+                </div>
+   
+                <div class="teamFunBox col-md-12" style="padding: 0">
+                    <div class="coverFunPics">
+                        <h3 class="teamLinkText thin-white" style="padding: 20px">Chris and Rob on the Summit of Quandary Peak.</h3> 
+                    </div>
+                    <img src="images/team_fun_photos/Chris_and_Rob_on_the%20Summit_of_Quandary_Peak.jpg">              
+                </div>
+           
+                 <div class="teamFunBox col-md-12" style="padding-left: 0; padding-right: 0">
+                    <div class="coverFunPics">
+                        <h3 class="teamLinkText thin-white" style="padding: 20px">Backcountry ski trip to Betty Bear Hut.</h3> 
+                     </div>
+                    <img src="images/team_fun_photos/Backcountry_Ski_Trip_to_Betty_Bear_Hut.jpg">
+                </div>
+                
+                <div class="teamFunBox col-md-12" style="padding: 0">
+                    <div class="coverFunPics">
+                        <h3 class="teamLinkText thin-white" style="padding: 20px">2019 Holiday party, "White Elephant" gift exchange.</h3>
+                    </div>
+                    <img src="images/team_fun_photos/2019_Holiday_Party_White_Elephant_Gift_Exchange.jpg">
+                </div>
+                
+                <div class="teamFunBox col-md-12" style="padding: 0">
+                    <div class="coverFunPics">
+                        <h3 class="teamLinkText thin-white" style="padding: 20px">Team event at Puzzah! Puzzle Room.</h3>
+                    </div>
+                    <img src="images/team_fun_photos/Team_Event_Puzzle_Room.jpg">
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+<!--END FUN IMAGES -->
+    
+    <div class="row sectionWhite">
+        <div class="inner contact-info">
+            <div class="inner-text ">
+                <p> ELEVATION COMPANIES</p>
+                <p>(303) 331-3411</p>
+                <p>4610 S. ULSTER STREET, STE. 150 DENVER, CO 80237</p> <a href="https://www.linkedin.com/company/elevation-companies-llc" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
+        </div>
+    </div>
+    <div id="foot"></div>
+    <!--        0-------------------------------------------------------------0    -->
+    <!-- Start Modal-->
+    <div class="modal fade reveal-modal" id="ritaModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Rita Burke</h4>
+                    <h5 class="modal-title">Project Coordinator</h5> <a href="mailto:rita.burke@elevationcompanies.com">rita.burke@elevationcompanies.com</a>
+                    <p>(303) 507-6880</p>
+                </div>
+                <div class="modal-body">
+                    <p>Rita has been lucky enough to live in Colorado most of her life and is still appreciative of its beauty and outdoor fun including camping, ziplining and rafting. She also loves traveling to Mexico and Europe and will pretty much go anywhere if given the chance. She has recently taken up photography on her travels and is gearing up for an upcoming African photo safari. Rita joined the Elevation Wireless team as a Project Coordinator bringing with her both real estate and site acquisition experience.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade reveal-modal" id="jimModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Jim DuBois</h4>
+                    <p>Maintenance Engineer</p> <a href="mailto:jim.dubois@elevationcompanies.com">jim.dubois@elevationcompanies.com</a>
+                    <p>(970) 685-1541</p>
+                </div>
+                <div class="modal-body">
+                    <p>Jim enjoys outdoor activities in Colorado including hiking and bike riding. He also likes to watch college sports and sample craft beers. Jim is a building engineer for Elevation Companies in Denver and Northern Colorado and has over 25 years’ experience in Facility Maintenance.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade reveal-modal" id="tomModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Tom Foster</h4>
+                    <h5 class="modal-title">Principal</h5> <a href="mailto:tom.foster@elevationcompanies.com">tom.foster@elevationcompanies.com</a>
+                    <p>(303) 728-4900</p>
+                </div>
+                <div class="modal-body">
+                    <p>Ever since Tom was young he wanted to build. Tom is the happiest either onsite overseeing the construction of our tenant improvement projects and developments or building Elevation Wireless into a premier wireless consulting firm in the west. A close second to his desire to build is fly fishing which has taken him from Alaska to the Caribbean. Tom caught the Triple Crown of the Rainbow trout family (Rainbow, Golden and Kamloops) by the age of 11.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade reveal-modal" id="cathyModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Cathy Hoblyn</h4>
+                    <h5 class="modal-title">Property Manager</h5> <a href="mailto:cathy.hoblyn@elevationcompanies.com">cathy.hoblyn@elevationcompanies.com</a>
+                    <p>(970) 702-4798</p>
+                </div>
+                <div class="modal-body">
+                    <p>A native New Yorker, Cathy made Colorado home in the summer of 2014.  When it’s time for Cathy to relax, she enjoys spending time with her husband and sons biking, camping, fishing, target shooting and entertaining friends and family.  She has over 14 years of commercial property management experience, ranging from commercial industrial facilities to medical office buildings.  Cathy’s passion lies in developing and growing tenant and owner relationships and ensuring that each building is operating and maintained to the highest of standards.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade reveal-modal" id="marcModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Marc Holmes</h4>
+                    <h5 class="modal-title">Principal</h5> <a href="mailto:marc.holmes@elevationcompanies.com">marc.holmes@elevationcompanies.com</a>
+                    <p>(720) 939-6741</p>
+                </div>
+                <div class="modal-body">
+                    <p>Marc has a passion for the outdoors. In the winter, he splits his time between backcountry AT, Nordic and alpine skiing. Summer it is whitewater kayaking, backpacking and climbing 14ers. His other great passion is Elevation Companies and working with their clients and customers. Marc oversees property management and handles most of the day to day medical office leasing.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade reveal-modal" id="chrisModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Chris Kennard</h4>
+                    <h5 class="modal-title">Site Acquisition Manager</h5> <a href="mailto:chris.kennard@elevationcompanies.com">chris.kennard@elevationcompanies.com</a>
+                    <p>(303) 913-7527</p>
+                </div>
+                <div class="modal-body">
+                    <p>During Chris’s early years he always enjoyed spending time outdoors.  His hunger for the outdoors is still alive today as an avid snowboarder and fly-fisherman. Whether its reeling in a trout on of his favorite river or getting fresh tracks on a powder day, Chris makes the most out of any outdoor experience. As a Manager for Elevation Wireless, Chris enjoys working through the day to day procedures of the business and strives for excellence.</p>
+                    <br/>
+                    <p>Chris holds the dubious distinction in Elevation Wireless of teaching the son of one of our Principal’s to snowboard… and breaking his arm in the process (that was not a good bonus year for Chris!!!).</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade reveal-modal" id="emilyModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Emily La Rosa</h4>
+                    <h5 class="modal-title">Assistant Property Manager</h5> <a href="mailto:emily.larosa@elevationcompanies.com">emily.larosa@elevationcompanies.com</a>
+                    <p>(720) 237-4131</p>
+                </div>
+                <div class="modal-body">
+                    <p>Emily joined Elevation Companies in April 2018 as Assistant Property Manager. She brings over twelve years of experience in commercial real estate. Emily began her career at Legacy Partners Commercial as a Property Administrator and has worked with Westfield Property Services, Newmark Grubb Knight Frank and CBRE. Originally from the Philippines, Emily loves spending her free time near the ocean. If she is not on it, near it or looking at it, she is dreaming of it.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade reveal-modal" id="marineModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Mariné McKee</h4>
+                    <h5 class="modal-title">Senior Property Manager</h5> <a href="mailto:marine.mckee@elevationcompanies.com">marine.mckee@elevationcompanies.com</a>
+                    <p>(720) 448-6557</p>
+                </div>
+                <div class="modal-body">
+                    <p>With 3 young children full of life, Mariné enjoys staying active and busy transporting her kids from soccer practice and games to gymnastics training and meets.  When Mariné isn’t running around with her kids, she likes to run 5 and 10Ks or hit her favorite nearby gym any chance she gets.  Mariné oversees the medical office portfolio as the Senior Property Manager for Elevation Companies and acts as the support for the leasing broker.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade reveal-modal" id="robModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Rob Render</h4>
+                    <h5 class="modal-title">Construction Manager</h5> <a href="mailto:rob.render@elevationcompanies.com">rob.render@elevationcompanies.com</a>
+                    <p>(720) 253-3093</p>
+                </div>
+                <div class="modal-body">
+                    <p>Rob has recently joined the Elevation team as the Construction Manager. Rob holds a Bachelor’s degree in Construction Management with a minor in Business Administration from Colorado State University. In his free time Rob enjoys mountain biking, camping and fly fishing. Coming on board with Elevation, Rob’s main responsibility will be managing Elevation’s various construction projects.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--    NEW -->
+    <div class="modal fade reveal-modal" id="samanthaModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Samantha Rhodes</h4>
+                    <h5 class="modal-title">Assistant Property Manager</h5> <a href="mailto:samantha.rhodes@elevationcompanies.com">samantha.rhodes@elevationcompanies.com</a>
+                    <p>(720) 520-4119</p>
+                </div>
+                <div class="modal-body">
+                    <p>Samantha is a native of Colorado and loves all that the mountains have to offer. In her free time, she enjoys hiking, camping and spending time with family and friends.  Samantha holds a bachelor’s degree in Business Administration with a concentration in real estate and finance from Colorado State University. She joined Elevation Companies in May 2019 as an Assistant Property Manager.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="modal fade reveal-modal" id="chrisHornModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Chris Horn</h4>
+                    <h5 class="modal-title">Assistant Superintendent</h5> <a href="mailto:chris.horn@elevationcompanies.com">chris.horn@elevationcompanies.com</a>
+                    <p>(325) 450-0838</p>
+                </div>
+                <div class="modal-body">
+                    <p>Chris joined TM Squared in April 2019 as the Assistant Superintendent. Working closely with the development team, he oversees the day-to-day field operations of our construction projects.  Like every proud Texas native, Chris enjoys watching high school football, grilling and smoking large cuts of meat, and brewing and drinking his favorite beer styles.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade reveal-modal" id="angelaModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Angela Dailey</h4>
+                    <h5 class="modal-title">Property Manager</h5> 
+                    <a href="mailto:angela.dailey@elevationcompanies.com">angela.dailey@elevationcompanies.com</a>
+                    <p>(720) 530-3122</p>
+                </div>
+                <div class="modal-body">
+                    <p>Angela is a native of Colorado, though she lived in San Diego for 11 years when she started her career in property management.  She has over 25 years’ of experience managing commercial real estate and holds a Colorado Broker License.  Angela loves to spend her time traveling and making unforgettable memories with her 17 year-old daughter, family and friends.  Angela joined Elevation Companies in October 2019 as a Property Manager overseeing a portfolio of medical office buildings, which she strives to maintain with excellence.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/b827f17623.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $('.box').hover(function () {
+            $(this).find('.coverTeam').show();
+        }, function () {
+            $(this).find('.coverTeam').hide();
+        });
+        
+         $('.teamFunBox').hover(function () {
+            $(this).find('.coverFunPics').show();
+        }, function () {
+            $(this).find('.coverFunPics').hide();
+        });
+        
+        
+        
+    </script>
+</body>
+
+</html>
